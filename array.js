@@ -1,4 +1,7 @@
 //Array Part  (25-04-2026)
+// [] this is called square brackets
+// () this is called parenthesis
+// {} this is braces or curly braces
 let myArr= ["arfa" , "ayesha","sania" , 23, true]
 console.log(myArr);
 console.log(myArr.includes("arfa")); // here it will be true
