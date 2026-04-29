@@ -65,3 +65,45 @@ console.log(loginUserInfo("Abubakar Shahbaz"));
 console.log(loginUserInfo("")); //just logged in
 //  "" & undefined ara  both considered as false in JS code
 console.log(loginUserInfo()); //undefined just logged in
+
+// ______________________ FUNCTION PART 2 __________________________________
+//____________________________ REST OPERATOR _______________________________
+// Rest operator and Spread operator work similarly in JS 
+function addNumbers(...num1){ // now this will give us all no. in compact form 
+    return num1
+}
+console.log(addNumbers(200,300,400,500,600));
+
+function countNumbers(val1,val2,...num1){ // now this will give us all the rest no. except value 1 and value 2
+    return num1
+}
+console.log(countNumbers(200,300,400,500,600)); //400,500,600
+//_______________ OBJECTS IN FUNCTION ________________________
+let obj={
+    name:"Sania Safdar",
+    age:21
+}
+function handleobj(obj){
+    if(obj.name==="Sania Safdar"){
+        console.log("I don't like her");
+        return //so that nothing prints after this statement
+        
+    }
+    console.log(`My best friend name is ${obj.name} and her age is ${obj.age}.`);
+    
+}
+// handleobj(obj)
+handleobj({ //we can also give the whole object in console.log statement
+    name:"Sania Safdar",
+    age:21
+})
+//_______________ ARRAY IN FUNCTION ________________________
+let array=[200,"Ayesha",false,700]
+function handleArray(array){
+    return array
+}
+console.log(handleArray(array));
+console.log(handleArray(array[0]));
+console.log(handleArray(array[3]));
+
+
