@@ -43,3 +43,50 @@ if (isUserLoggedIn !== false){
 }
 console.log(`Hello world. just did some random work`);
 
+//16-05-2026
+//Scope Concept
+const score = 200
+if(score > 100){
+    const power= "Flying"
+    console.log(`User's Power : ${power}`);
+    
+}
+//  console.log(`User's Power : ${power}`); will give us error here
+const balance = 1000
+if(balance > 500) console.log("Balance is greater than 500");
+// if(balance > 500) console.log("Balance is greater than 500"), console.log("And this is not prefferable practice"); not a good practice 
+
+//---------------------- NESTED IF ---------------------
+if(balance<500){
+console.log("Blance is less than 500");
+
+}else if(balance < 750){
+    console.log("Blance is less than 750");
+}else if(balance < 950){
+    console.log("Blance is less than 950");
+}
+else{
+    console.log("Balance is less than 1200");
+    
+}
+
+const userLoggedIn= true
+const usedDebitCard= true
+const loggedInFromGoogle= true
+const loggedInFromEmail= false
+if(userLoggedIn && usedDebitCard && 2==="2"){
+    console.log("Allow them shopping");
+    
+}
+else{
+    console.log("Don't allow them shopping");
+    
+}
+if(loggedInFromEmail || loggedInFromGoogle){
+    console.log("User just logged in");
+    
+}
+
+
+
+
