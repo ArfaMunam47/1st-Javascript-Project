@@ -20,7 +20,8 @@ for (let i = 0; i <= 5; i++) {
     // console.log(`Outer loop : ${i}`);
     for (let j = 0; j < 7; j++) {
     //    console.log(`Outer loop : ${i} and Inner loop : ${j}`);  
-    console.log(i + '*' + j + '=' + i * j);
+  console.log(i + '*' + j + '=' + i * j);
+  
         
     }
   
