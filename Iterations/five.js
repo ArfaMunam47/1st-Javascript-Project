@@ -1,4 +1,4 @@
-// 25-05-2026 WORK
+// 23-05-2026 WORK
 let coding=["js","ruby","html","swift","c++","java"]
 // console.log(coding); // will print this array
 //  --------------------- FOR EACH LOOP -------------------------------
